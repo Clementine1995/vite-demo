@@ -5,7 +5,7 @@ import User from '../views/User.vue'
 import About from '../views/About.vue'
 
 const descComponent = () => {
-  return import('../views/Desc')
+  return import('../views/Desc.vue')
 }
 
 export const routerHistory = createWebHashHistory()
@@ -38,8 +38,8 @@ export const router = createRouter({
   ]
 })
 
-router.beforeEach((to, from, next) => {
-  console.log('from:',from)
-  console.log('to:',to)
-  next()
-})
+// router.beforeEach((to, from, next) => {
+//   console.log('from:',from)
+//   console.log('to:',to)
+//   next()
+// })
