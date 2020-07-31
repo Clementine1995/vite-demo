@@ -14,10 +14,12 @@
 </template>
 
 <script>
-import { reactive, readonly, watch, ref } from 'vue'
+import { reactive, readonly, watch, watchEffect, ref, onMounted, getCurrentInstance } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 export default {
   name: 'home',
   setup() {
+    const { ctx } = getCurrentInstance()
     let msg = reactive({
       name: 'zhangsan',
       age: 39
@@ -47,7 +49,16 @@ export default {
         name: 'xNova'
       }
     ])
-
+    onMounted(() => {
+      // 直接对 响应式对象重新赋值会导致切断联系
+      msg = reactive({
+        name: 'liuliu',
+        addr: '11111111'
+      })
+    })
+    watchEffect(() => {
+      console.log(useRoute())
+    })
     function increase () {
       console.log(msg)
       list.push({
@@ -55,10 +66,13 @@ export default {
         name: msg.name
       })
     }
+
     function delPerson(idx, key) {
+      console.log(msg)
       // list = list.filter(item => item.key !== key)
       list.splice(idx, 1)
     }
+
     return {
       msg,
       increase,
@@ -66,13 +80,6 @@ export default {
       delPerson,
       myRef
     }
-  },
-  mounted() {
-    console.log(this)
-    this.msg = reactive({
-      name: 'liuliu',
-      age: 21
-    })
   }
 }
 </script>
