@@ -1,9 +1,7 @@
 <template>
-  <div>home</div>
+  <div>Here is Home</div>
 </template>
 
 <script>
-export default {
-  name: 'home'
-}
+
 </script>

@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
+import router from "@/router";
 import App from './App.vue'
-import './index.css'
-import { router } from './routers/index'
 
-const app = createApp(App)
-app.use(router)
-app.mount('#app')
+import { Menu } from 'ant-design-vue';
+import 'ant-design-vue/dist/antd.css';
+
+
+
+createApp(App).use(Menu).use(router).mount('#app')
