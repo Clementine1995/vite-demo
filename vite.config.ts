@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import path from 'path'
 import ViteComponents, {
   AntDesignVueResolver,
@@ -10,6 +11,10 @@ import ViteComponents, {
 export default defineConfig({
   plugins: [
     vue(),
+    vueJsx({
+      // options are passed on to @vue/babel-plugin-jsx
+      // https://github.com/vuejs/jsx-next
+    }),
     Components({
       dts: true, // 启用ts支持
       resolvers: [

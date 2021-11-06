@@ -10,6 +10,20 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
+## Rollup.js
+
+Vite 使用 Rollup 作为打包工具。
+
+[Rollup.js 中文文档](https://rollupjs.org/guide/zh/)
+
+## esbuild
+
+Vite 使用[esbuild](https://esbuild.github.io/)进行依赖预构建
+
+## Vercel
+
+不错的网站托管服务[Vercel](https://vercel.com/)
+
 ## 如何全局挂载全局属性和方法
 
 ```js
@@ -59,3 +73,8 @@ export default {
   },
 }
 ```
+
+## 服务端渲染相关框架
+
+[Nuxt.js](https://v3.nuxtjs.org/getting-started/introduction)
+[Next.js](https://nextjs.org/docs)
