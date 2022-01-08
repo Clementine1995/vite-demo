@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import path from 'path'
+import postcssNesting from 'postcss-nesting'
 import ViteComponents, {
   AntDesignVueResolver,
 } from 'unplugin-vue-components/resolvers'
@@ -23,8 +24,14 @@ export default defineConfig({
       ],
     }),
   ],
+  css: {
+    postcss: {
+      plugins: [postcssNesting],
+    },
+  },
   server: {
     port: 8080,
+    open: true,
   },
   resolve: {
     alias: {
