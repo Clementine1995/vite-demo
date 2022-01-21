@@ -2,11 +2,8 @@
   <div>
     <HelloWorld :msg="msg" />
 
-    <div class="css-doodle">
-      <css-doodle>
-        :doodle { @grid: 5 / 8em; } background: #60569e; transform:
-        scale(@rand(.2, .9));
-      </css-doodle>
+    <div class="test">
+      <css-doodle> </css-doodle>
     </div>
   </div>
 </template>
