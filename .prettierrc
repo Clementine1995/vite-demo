@@ -7,5 +7,14 @@
   "arrowParens": "avoid",
   "trailingComma": "es5",
   "bracketSpacing": true,
-  "printWidth": 80
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ],
+  "endOfLine": "auto"
 }

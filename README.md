@@ -78,3 +78,11 @@ export default {
 
 [Nuxt.js](https://v3.nuxtjs.org/getting-started/introduction)
 [Next.js](https://nextjs.org/docs)
+
+## Naive UI
+
+Naive UI 是一个 Vue3 的组件库。[Naive UI](https://www.naiveui.com/zh-CN/os-theme/docs/introduction)
+
+## Pinia
+
+Pinia 是一个类似于 Vuex 的状态管理库，可用于 Vue2/Vue3。其中取消了突变的概念。[Pinia](https://pinia.vuejs.org/introduction.html)
