@@ -9,14 +9,14 @@ specifiers:
   '@vue/eslint-config-typescript': ^10.0.0
   ant-design-vue: ^3.0.0-beta.8
   axios: ^0.26.0
-  css-doodle: ^0.25.2
+  css-doodle: ^0.26.1
   eslint: ^8.10.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.0.0
   eslint-plugin-vue: ^8.5.0
   husky: ^7.0.4
   less: ^4.1.2
-  lint-staged: ^12.3.4
+  lint-staged: ^12.3.5
   pinia: ^2.0.11
   postcss-nesting: ^10.1.3
   prettier: ^2.5.1
@@ -34,7 +34,7 @@ specifiers:
 dependencies:
   ant-design-vue: registry.npmmirror.com/ant-design-vue/3.0.0-beta.8_vue@3.2.31
   axios: registry.npmmirror.com/axios/0.26.0
-  css-doodle: registry.npmmirror.com/css-doodle/0.25.2
+  css-doodle: registry.npmmirror.com/css-doodle/0.26.1
   pinia: registry.npmmirror.com/pinia/2.0.11_typescript@4.6.2+vue@3.2.31
   vue: registry.npmmirror.com/vue/3.2.31
   vue-router: registry.npmmirror.com/vue-router/4.0.13_vue@3.2.31
@@ -52,7 +52,7 @@ devDependencies:
   eslint-plugin-vue: registry.npmmirror.com/eslint-plugin-vue/8.5.0_eslint@8.10.0
   husky: registry.npmmirror.com/husky/7.0.4
   less: registry.npmmirror.com/less/4.1.2
-  lint-staged: registry.npmmirror.com/lint-staged/12.3.4
+  lint-staged: registry.npmmirror.com/lint-staged/12.3.5
   postcss-nesting: registry.npmmirror.com/postcss-nesting/10.1.3
   prettier: registry.npmmirror.com/prettier/2.5.1
   stylelint: registry.npmmirror.com/stylelint/14.5.3
@@ -1752,10 +1752,10 @@ packages:
       which: registry.npmmirror.com/which/2.0.2
     dev: true
 
-  registry.npmmirror.com/css-doodle/0.25.2:
-    resolution: {integrity: sha512-bhhhac0r4W/zExMKcs0v06o+DRH5mWV/5K4akwyoRxQ+HNngrkOyd5k80gD67BwfC6pNKBfL+O/0rmIu+VRvhw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-doodle/-/css-doodle-0.25.2.tgz}
+  registry.npmmirror.com/css-doodle/0.26.1:
+    resolution: {integrity: sha512-5/4JHMDloxKkDNpdGuRn6AkllPmcHBuXh64EFvhOzB325d5gidJVJEzwCsZaeP7ZmApOiw1gqxRDBZbdwYlB7w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-doodle/-/css-doodle-0.26.1.tgz}
     name: css-doodle
-    version: 0.25.2
+    version: 0.26.1
     dev: false
 
   registry.npmmirror.com/css-functions-list/3.0.1:
@@ -3151,10 +3151,10 @@ packages:
     version: 1.1.6
     dev: true
 
-  registry.npmmirror.com/lint-staged/12.3.4:
-    resolution: {integrity: sha512-yv/iK4WwZ7/v0GtVkNb3R82pdL9M+ScpIbJLJNyCXkJ1FGaXvRCOg/SeL59SZtPpqZhE7BD6kPKFLIDUhDx2/w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.4.tgz}
+  registry.npmmirror.com/lint-staged/12.3.5:
+    resolution: {integrity: sha512-oOH36RUs1It7b9U/C7Nl/a0sLfoIBcMB8ramiB3nuJ6brBqzsWiUAFSR5DQ3yyP/OR7XKMpijtgKl2DV1lQ3lA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lint-staged/-/lint-staged-12.3.5.tgz}
     name: lint-staged
-    version: 12.3.4
+    version: 12.3.5
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
