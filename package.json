@@ -15,7 +15,7 @@
     "css-doodle": "^0.26.2",
     "pinia": "^2.0.11",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",

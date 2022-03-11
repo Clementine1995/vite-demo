@@ -28,7 +28,7 @@ specifiers:
   vite: ^2.8.6
   vite-plugin-compression: ^0.5.1
   vue: ^3.2.31
-  vue-router: ^4.0.13
+  vue-router: ^4.0.14
   vue-tsc: ^0.32.1
 
 dependencies:
@@ -37,7 +37,7 @@ dependencies:
   css-doodle: registry.npmmirror.com/css-doodle/0.26.2
   pinia: registry.npmmirror.com/pinia/2.0.11_typescript@4.6.2+vue@3.2.31
   vue: registry.npmmirror.com/vue/3.2.31
-  vue-router: registry.npmmirror.com/vue-router/4.0.13_vue@3.2.31
+  vue-router: registry.npmmirror.com/vue-router/4.0.14_vue@3.2.31
 
 devDependencies:
   '@types/node': registry.npmmirror.com/@types/node/17.0.21
@@ -4811,11 +4811,11 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/vue-router/4.0.13_vue@3.2.31:
-    resolution: {integrity: sha512-LmXrC+BkDRLak+d5xTMgUYraT3Nj0H/vCbP+7usGvIl9Viqd1UP6AsP0i69pSbn9O0dXK/xCdp4yPw21HqV9Jw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.0.13.tgz}
-    id: registry.npmmirror.com/vue-router/4.0.13
+  registry.npmmirror.com/vue-router/4.0.14_vue@3.2.31:
+    resolution: {integrity: sha512-wAO6zF9zxA3u+7AkMPqw9LjoUCjSxfFvINQj3E/DceTt6uEz1XZLraDhdg2EYmvVwTBSGlLYsUw8bDmx0754Mw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vue-router/-/vue-router-4.0.14.tgz}
+    id: registry.npmmirror.com/vue-router/4.0.14
     name: vue-router
-    version: 4.0.13
+    version: 4.0.14
     peerDependencies:
       vue: ^3.2.0
     dependencies:
