@@ -13,8 +13,8 @@
   import 'css-doodle'
   import HelloWorld from '@/components/HelloWorld.vue'
   import { ref } from 'vue'
-
-  export default {
+  import { defineComponent } from 'vue'
+  export default defineComponent({
     components: {
       HelloWorld,
     },
@@ -22,6 +22,6 @@
       const msg = ref('Hello World')
       return { msg }
     },
-  }
+  })
 </script>
 <style></style>

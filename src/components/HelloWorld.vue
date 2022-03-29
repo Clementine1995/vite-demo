@@ -6,7 +6,7 @@
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
-  <a-button type="primary" @click="addAge">age++</a-button>
+  <n-button type="primary" @click="addAge">age++</n-button>
 </template>
 
 <script setup lang="ts">

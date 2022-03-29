@@ -5,9 +5,7 @@ import viteCompression from 'vite-plugin-compression'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import path from 'path'
 import postcssNesting from 'postcss-nesting'
-import ViteComponents, {
-  AntDesignVueResolver,
-} from 'unplugin-vue-components/resolvers'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,7 +19,7 @@ export default defineConfig({
       dts: true, // 启用ts支持
       resolvers: [
         // https://github.com/antfu/unplugin-vue-components
-        AntDesignVueResolver(), // 配置 ant design vue 按需加载支持
+        NaiveUiResolver(), // 配置 Naive-ui 按需加载支持
       ],
     }),
     // gzip压缩 生产环境生成 .gz 文件
@@ -39,7 +37,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8080,
+    port: 8086,
     open: true,
   },
   resolve: {
@@ -48,16 +46,6 @@ export default defineConfig({
       components: path.resolve(__dirname, 'src/components'),
       layouts: path.resolve(__dirname, 'src/layouts'),
       utils: path.resolve(__dirname, 'src/utils'),
-    },
-  },
-  // 生产环境打包配置
-  //去除 console debugger
-  build: {
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
     },
   },
 })
