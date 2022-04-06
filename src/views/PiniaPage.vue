@@ -6,8 +6,8 @@
     <div class="pinia-test">
       Double Count Plus One: {{ store.doublePlusOne }}
     </div>
-    <a-button @click="store.increment">点击一下</a-button>
-    <a-button @click="store.randomizeCounter">随机一下</a-button>
+    <n-button @click="store.increment">点击一下</n-button>
+    <n-button @click="store.randomizeCounter">随机一下</n-button>
   </div>
 </template>
 <script setup lang="ts">
