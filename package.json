@@ -11,7 +11,7 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "@vueuse/core": "^8.7.3",
+    "@vueuse/core": "^8.7.4",
     "axios": "^0.27.2",
     "css-doodle": "^0.28.1",
     "pinia": "^2.0.14",
@@ -31,24 +31,24 @@
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.3.0",
-    "eslint": "^8.17.0",
+    "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^9.1.1",
     "husky": "^8.0.1",
     "less": "^4.1.3",
     "lint-staged": "^13.0.2",
-    "naive-ui": "^2.30.4",
+    "naive-ui": "^2.30.5",
     "postcss-nesting": "^10.1.8",
     "prettier": "^2.7.1",
     "stylelint": "^14.9.1",
     "stylelint-config-recommended": "^8.0.0",
     "stylelint-config-standard": "^26.0.0",
-    "typescript": "^4.7.3",
+    "typescript": "^4.7.4",
     "unplugin-vue-components": "^0.19.6",
     "vite": "^2.9.12",
     "vite-plugin-compression": "^0.5.1",
-    "vue-tsc": "^0.37.9"
+    "vue-tsc": "^0.38.1"
   },
   "husky": {
     "hooks": {
