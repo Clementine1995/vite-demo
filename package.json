@@ -11,7 +11,7 @@
     "commit": "git-cz"
   },
   "dependencies": {
-    "@vueuse/core": "^8.7.4",
+    "@vueuse/core": "^8.7.5",
     "axios": "^0.27.2",
     "css-doodle": "^0.28.1",
     "pinia": "^2.0.14",
