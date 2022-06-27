@@ -20,6 +20,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Pinia',
     component: PiniaPage,
   },
+  {
+    path: '/daily',
+    name: 'Daily',
+    component: () => import('../views/DailyPage.vue'),
+  },
 ]
 
 const router = createRouter({

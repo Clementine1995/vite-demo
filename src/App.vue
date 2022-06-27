@@ -1,10 +1,13 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link>/
-    <router-link to="/about">About</router-link>/
-    <router-link to="/pinia">Pinia</router-link>
-  </div>
-  <router-view />
+  <n-message-provider>
+    <div id="nav">
+      <router-link to="/">Home</router-link>/
+      <router-link to="/about">About</router-link>/
+      <router-link to="/pinia">Pinia</router-link>/
+      <router-link to="/daily">Daily</router-link>
+    </div>
+    <router-view />
+  </n-message-provider>
 </template>
 <script setup lang="ts">
   // This starter template is using Vue 3 <script setup> SFCs
