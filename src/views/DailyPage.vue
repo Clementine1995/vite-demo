@@ -1,78 +1,104 @@
 <template>
   <div>
-    <n-data-table
-      :columns="columns"
-      :data="data"
-      :pagination="pagination"
-      :bordered="false"
-    />
+    <a-table :columns="columns" :data-source="data">
+      <template #headerCell="{ column }">
+        <template v-if="column.key === 'name'">
+          <span> Name </span>
+        </template>
+      </template>
+
+      <template #bodyCell="{ column, record }">
+        <template v-if="column.key === 'name'">
+          <a>
+            {{ record.name }}
+          </a>
+        </template>
+        <template v-else-if="column.key === 'tags'">
+          <span>
+            <a-tag
+              v-for="tag in record.tags"
+              :key="tag"
+              :color="
+                tag === 'loser'
+                  ? 'volcano'
+                  : tag.length > 5
+                  ? 'geekblue'
+                  : 'green'
+              "
+            >
+              {{ tag.toUpperCase() }}
+            </a-tag>
+          </span>
+        </template>
+        <template v-else-if="column.key === 'action'">
+          <span>
+            <a>Invite 一 {{ record.name }}</a>
+            <a-divider type="vertical" />
+            <a>Delete</a>
+          </span>
+        </template>
+      </template>
+    </a-table>
   </div>
 </template>
 <script lang="ts">
-  import { h, defineComponent } from 'vue'
-  import { NButton, useMessage } from 'naive-ui'
-  import type { DataTableColumns } from 'naive-ui'
+  import { defineComponent } from 'vue'
+  const columns = [
+    {
+      name: 'Name',
+      dataIndex: 'name',
+      key: 'name',
+    },
+    {
+      title: 'Age',
+      dataIndex: 'age',
+      key: 'age',
+    },
+    {
+      title: 'Address',
+      dataIndex: 'address',
+      key: 'address',
+    },
+    {
+      title: 'Tags',
+      key: 'tags',
+      dataIndex: 'tags',
+    },
+    {
+      title: 'Action',
+      key: 'action',
+    },
+  ]
 
-  type Song = {
-    no: number
-    title: string
-    length: string
-  }
-
-  const createColumns = ({
-    play,
-  }: {
-    play: (row: Song) => void
-  }): DataTableColumns<Song> => {
-    return [
-      {
-        title: 'No',
-        key: 'no',
-      },
-      {
-        title: 'Title',
-        key: 'title',
-      },
-      {
-        title: 'Length',
-        key: 'length',
-      },
-      {
-        title: 'Action',
-        key: 'actions',
-        render(row) {
-          return h(
-            NButton,
-            {
-              strong: true,
-              tertiary: true,
-              size: 'small',
-              onClick: () => play(row),
-            },
-            { default: () => 'Play' }
-          )
-        },
-      },
-    ]
-  }
-
-  const data: Song[] = [
-    { no: 3, title: 'Wonderwall', length: '4:18' },
-    { no: 4, title: "Don't Look Back in Anger", length: '4:48' },
-    { no: 12, title: 'Champagne Supernova', length: '7:27' },
+  const data = [
+    {
+      key: '1',
+      name: 'John Brown',
+      age: 32,
+      address: 'New York No. 1 Lake Park',
+      tags: ['nice', 'developer'],
+    },
+    {
+      key: '2',
+      name: 'Jim Green',
+      age: 42,
+      address: 'London No. 1 Lake Park',
+      tags: ['loser'],
+    },
+    {
+      key: '3',
+      name: 'Joe Black',
+      age: 32,
+      address: 'Sidney No. 1 Lake Park',
+      tags: ['cool', 'teacher'],
+    },
   ]
 
   export default defineComponent({
     setup() {
-      const message = useMessage()
       return {
         data,
-        columns: createColumns({
-          play(row: Song) {
-            message.info(`Play ${row.title}`)
-          },
-        }),
-        pagination: false as const,
+        columns,
       }
     },
   })
