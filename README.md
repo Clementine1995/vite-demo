@@ -86,3 +86,9 @@ Naive UI 是一个 Vue3 的组件库。[Naive UI](https://www.naiveui.com/zh-CN/
 ## Pinia
 
 Pinia 是一个类似于 Vuex 的状态管理库，可用于 Vue2/Vue3。其中取消了突变的概念。[Pinia](https://pinia.vuejs.org/introduction.html)
+
+## Chart.js
+
+Chart.js 开源的 HTML5 图表工具
+
+> [vue-chartjs](https://vue-chartjs.org/guide/)

@@ -19,10 +19,10 @@
     color: #2c3e50;
     margin: 20px;
   }
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     body {
       background: #333;
       color: white;
     }
-  }
+  } */
 </style>

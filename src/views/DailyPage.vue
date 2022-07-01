@@ -1,9 +1,11 @@
 <template>
   <div>
     <a-table :columns="columns" :data-source="data"> </a-table>
+    <bar-chart />
   </div>
 </template>
 <script lang="ts">
+  import BarChart from '../components/chart/BarChart.vue'
   import { defineComponent } from 'vue'
   const columns = [
     {
@@ -45,6 +47,7 @@
   ]
 
   export default defineComponent({
+    components: { BarChart },
     setup() {
       return {
         data,
