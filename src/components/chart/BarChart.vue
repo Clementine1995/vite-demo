@@ -23,6 +23,7 @@
     CategoryScale,
     LinearScale,
     PluginOptionsByType,
+    ChartOptions,
   } from 'chart.js'
 
   ChartJS.register(
@@ -79,10 +80,12 @@
     setup(props) {
       const chartData = {
         labels: ['January', 'February', 'March'],
-        datasets: [{ data: [40, 20, 12] }],
+        datasets: [{ label: 'test', data: [40, 20, 12] }],
       }
 
-      const chartOptions = { responsive: true }
+      const chartOptions: ChartOptions = {
+        responsive: false,
+      }
 
       return {
         chartData,
