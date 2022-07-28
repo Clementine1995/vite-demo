@@ -3,7 +3,8 @@
     <router-link to="/">Home</router-link>/
     <router-link to="/about">About</router-link>/
     <router-link to="/pinia">Pinia</router-link>/
-    <router-link to="/daily">Daily</router-link>
+    <router-link to="/daily">Daily</router-link>/
+    <router-link to="/calc">Calc</router-link>
   </div>
   <router-view />
 </template>

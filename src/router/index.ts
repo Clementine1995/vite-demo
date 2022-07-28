@@ -25,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Daily',
     component: () => import('../views/DailyPage.vue'),
   },
+  {
+    path: '/calc',
+    name: 'Calc',
+    component: () => import('../views/CalcPage.vue'),
+  },
 ]
 
 const router = createRouter({
