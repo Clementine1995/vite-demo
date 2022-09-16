@@ -92,3 +92,7 @@ Pinia 是一个类似于 Vuex 的状态管理库，可用于 Vue2/Vue3。其中�
 Chart.js 开源的 HTML5 图表工具
 
 > [vue-chartjs](https://vue-chartjs.org/guide/)
+
+## eslint-plugin-deprecation
+
+[eslint-plugin-deprecation](https://github.com/gund/eslint-plugin-deprecation) 检查使用过时代码的插件
