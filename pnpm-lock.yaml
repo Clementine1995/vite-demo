@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.1.2
   '@commitlint/config-conventional': ^17.1.0
-  '@types/node': ^18.11.2
+  '@types/node': ^18.11.3
   '@typescript-eslint/eslint-plugin': ^5.40.1
   '@typescript-eslint/parser': ^5.40.1
   '@vitejs/plugin-vue': ^3.1.2
@@ -54,7 +54,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.1.2
   '@commitlint/config-conventional': 17.1.0
-  '@types/node': 18.11.2
+  '@types/node': 18.11.3
   '@typescript-eslint/eslint-plugin': 5.40.1_ukgdydjtebaxmxfqp5v5ulh64y
   '@typescript-eslint/parser': 5.40.1_z4bbprzjrhnsfa24uvmcbu7f5q
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
@@ -794,8 +794,8 @@ packages:
     resolution: {integrity: sha512-0b+utRBSYj8L7XAp0d+DX7lI4cSmowNaaTkk6/1SKzbKkG+doLuPusB9EOvzLJ8ahJSk03bTLIL6cWaEd4dBKA==}
     dev: true
 
-  /@types/node/18.11.2:
-    resolution: {integrity: sha512-BWN3M23gLO2jVG8g/XHIRFWiiV4/GckeFIqbU/C4V3xpoBBWSMk4OZomouN0wCkfQFPqgZikyLr7DOYDysIkkw==}
+  /@types/node/18.11.3:
+    resolution: {integrity: sha512-fNjDQzzOsZeKZu5NATgXUPsaFaTxeRgFXoosrHivTl8RGeV733OLawXsGfEk9a8/tySyZUyiZ6E8LcjPFZ2y1A==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
