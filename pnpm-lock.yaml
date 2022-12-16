@@ -12,7 +12,7 @@ specifiers:
   '@vueuse/core': ^9.6.0
   ant-design-vue: ^3.2.15
   axios: ^1.2.1
-  chart.js: ^4.0.1
+  chart.js: ^4.1.0
   commitizen: ^4.2.6
   commitlint-config-cz: ^0.13.3
   css-doodle: ^0.31.2
@@ -44,11 +44,11 @@ dependencies:
   '@vueuse/core': 9.6.0_vue@3.2.45
   ant-design-vue: 3.2.15_vue@3.2.45
   axios: 1.2.1
-  chart.js: 4.0.1
+  chart.js: 4.1.0
   css-doodle: 0.31.2
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
   vue: 3.2.45
-  vue-chartjs: 5.0.1_chart.js@4.0.1+vue@3.2.45
+  vue-chartjs: 5.0.1_chart.js@4.1.0+vue@3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
 devDependencies:
@@ -893,6 +893,10 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /@kurkle/color/0.3.1:
+    resolution: {integrity: sha512-hW0GwZj06z/ZFUW2Espl7toVDjghJN+EKqyXzPSV8NV89d5BYp5rRMBJoc+aUN0x5OXDMeRQHazejr2Xmqj2tw==}
+    dev: false
+
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -1645,9 +1649,11 @@ packages:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
 
-  /chart.js/4.0.1:
-    resolution: {integrity: sha512-5/8/9eBivwBZK81mKvmIwTb2Pmw4D/5h1RK9fBWZLLZ8mCJ+kfYNmV9rMrGoa5Hgy2/wVDBMLSUDudul2/9ihA==}
+  /chart.js/4.1.0:
+    resolution: {integrity: sha512-Xta4vonV3e1pwFGLTyUMqXk2aH03D6253DSt52pdS7247u2SpIpQb6kCewxNgx1JfeLBUnjaxHYbHpOv6w78Og==}
     engines: {pnpm: ^7.0.0}
+    dependencies:
+      '@kurkle/color': 0.3.1
     dev: false
 
   /chokidar/3.5.3:
@@ -4580,13 +4586,13 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vue-chartjs/5.0.1_chart.js@4.0.1+vue@3.2.45:
+  /vue-chartjs/5.0.1_chart.js@4.1.0+vue@3.2.45:
     resolution: {integrity: sha512-+0IfwyZ1U+oKU0CJmqgEMieov5K+c5AuZ7boJeDnhCC/qmtKTLId1jL7BID5poCaC38DOUbJu77vsA091aYeRw==}
     peerDependencies:
       chart.js: ^4.0.0
       vue: ^3.0.0-0 || ^2.6.0
     dependencies:
-      chart.js: 4.0.1
+      chart.js: 4.1.0
       vue: 3.2.45
     dev: false
 
