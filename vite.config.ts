@@ -1,20 +1,18 @@
+import { fileURLToPath, URL } from 'node:url'
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import Components from 'unplugin-vue-components/vite'
-import viteCompression from 'vite-plugin-compression'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import path from 'path'
-import postcssNesting from 'postcss-nesting'
+import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
+import viteCompression from 'vite-plugin-compression'
+import postcssNesting from 'postcss-nesting'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    vueJsx({
-      // options are passed on to @vue/babel-plugin-jsx
-      // https://github.com/vuejs/jsx-next
-    }),
+    vueJsx(),
     Components({
       dts: true, // 启用ts支持
       resolvers: [
@@ -36,16 +34,9 @@ export default defineConfig({
       plugins: [postcssNesting],
     },
   },
-  server: {
-    port: 8086,
-    open: true,
-  },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      components: path.resolve(__dirname, 'src/components'),
-      layouts: path.resolve(__dirname, 'src/layouts'),
-      utils: path.resolve(__dirname, 'src/utils'),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })

@@ -1,9 +1,9 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/HomePage.vue'
 import About from '../views/OtherPage.vue'
 import PiniaPage from '../views/PiniaPage.vue'
 
-const routes: Array<RouteRecordRaw> = [
+const routes = [
   // 加入类型声明可以约束配置项，提升书写体验
   {
     path: '/',
@@ -33,7 +33,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes,
 })
 
