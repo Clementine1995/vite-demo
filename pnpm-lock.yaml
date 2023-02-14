@@ -1,8 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@commitlint/cli': ^17.4.2
-  '@commitlint/config-conventional': ^17.4.2
+  '@commitlint/cli': ^17.4.3
+  '@commitlint/config-conventional': ^17.4.3
   '@rushstack/eslint-patch': ^1.2.0
   '@types/node': ^18.13.0
   '@vitejs/plugin-vue': ^4.0.0
@@ -11,7 +11,7 @@ specifiers:
   '@vue/eslint-config-typescript': ^11.0.2
   '@vue/tsconfig': ^0.1.3
   ant-design-vue: ^3.2.15
-  axios: ^1.3.2
+  axios: ^1.3.3
   chart.js: ^4.2.1
   commitizen: ^4.3.0
   commitlint-config-cz: ^0.13.3
@@ -24,7 +24,7 @@ specifiers:
   less: ^4.1.3
   npm-run-all: ^4.1.5
   pinia: ^2.0.30
-  postcss-nesting: ^11.1.0
+  postcss-nesting: ^11.2.0
   prettier: ^2.8.4
   typescript: ~4.9.5
   unplugin-vue-components: ^0.23.0
@@ -37,7 +37,7 @@ specifiers:
 
 dependencies:
   ant-design-vue: 3.2.15_vue@3.2.47
-  axios: 1.3.2
+  axios: 1.3.3
   chart.js: 4.2.1
   css-doodle: 0.33.1
   pinia: 2.0.30_hmuptsblhheur2tugfgucj7gc4
@@ -46,8 +46,8 @@ dependencies:
   vue-router: 4.1.6_vue@3.2.47
 
 devDependencies:
-  '@commitlint/cli': 17.4.2
-  '@commitlint/config-conventional': 17.4.2
+  '@commitlint/cli': 17.4.3
+  '@commitlint/config-conventional': 17.4.3
   '@rushstack/eslint-patch': 1.2.0
   '@types/node': 18.13.0
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
@@ -64,7 +64,7 @@ devDependencies:
   husky: 8.0.3
   less: 4.1.3
   npm-run-all: 4.1.5
-  postcss-nesting: 11.1.0
+  postcss-nesting: 11.2.0
   prettier: 2.8.4
   typescript: 4.9.5
   unplugin-vue-components: 0.23.0_vue@3.2.47
@@ -408,13 +408,13 @@ packages:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  /@commitlint/cli/17.4.2:
-    resolution: {integrity: sha512-0rPGJ2O1owhpxMIXL9YJ2CgPkdrFLKZElIZHXDN8L8+qWK1DGH7Q7IelBT1pchXTYTuDlqkOTdh//aTvT3bSUA==}
+  /@commitlint/cli/17.4.3:
+    resolution: {integrity: sha512-IPTS7AZuBHgD0gl24El8HwuDM9zJN9JLa5KmZUQoFD1BQeGGdzAYJOnAr85CeJWpTDok0BGHDL0+4odnH0iTyA==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
       '@commitlint/format': 17.4.0
-      '@commitlint/lint': 17.4.2
+      '@commitlint/lint': 17.4.3
       '@commitlint/load': 17.4.2
       '@commitlint/read': 17.4.2
       '@commitlint/types': 17.4.0
@@ -428,8 +428,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional/17.4.2:
-    resolution: {integrity: sha512-JVo1moSj5eDMoql159q8zKCU8lkOhQ+b23Vl3LVVrS6PXDLQIELnJ34ChQmFVbBdSSRNAbbXnRDhosFU+wnuHw==}
+  /@commitlint/config-conventional/17.4.3:
+    resolution: {integrity: sha512-8EsY2iDw74hCk3hIQSg7/E0R8/KtPjnFPZVwmmHxcjhZjkSykmxysefICPDnbI3xgxfov0zwL1WKDHM8zglJdw==}
     engines: {node: '>=v14'}
     dependencies:
       conventional-changelog-conventionalcommits: 5.0.0
@@ -476,13 +476,13 @@ packages:
       semver: 7.3.8
     dev: true
 
-  /@commitlint/lint/17.4.2:
-    resolution: {integrity: sha512-HcymabrdBhsDMNzIv146+ZPNBPBK5gMNsVH+el2lCagnYgCi/4ixrHooeVyS64Fgce2K26+MC7OQ4vVH8wQWVw==}
+  /@commitlint/lint/17.4.3:
+    resolution: {integrity: sha512-GnPsqEYmXIB/MaBhRMzkiDJWyjuLrKad4xoxKO4N6Kc19iqjR4DPc/bl2dxeW9kUmtrAtefOzIEzJAevpA5y2w==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/is-ignored': 17.4.2
       '@commitlint/parse': 17.4.2
-      '@commitlint/rules': 17.4.2
+      '@commitlint/rules': 17.4.3
       '@commitlint/types': 17.4.0
     dev: true
 
@@ -546,8 +546,8 @@ packages:
       resolve-global: 1.0.0
     dev: true
 
-  /@commitlint/rules/17.4.2:
-    resolution: {integrity: sha512-OGrPsMb9Fx3/bZ64/EzJehY9YDSGWzp81Pj+zJiY+r/NSgJI3nUYdlS37jykNIugzazdEXfMtQ10kmA+Kx2pZQ==}
+  /@commitlint/rules/17.4.3:
+    resolution: {integrity: sha512-xHReDfE3Z+O9p1sXeEhPRSk4FifBsC4EbXzvQ4aa0ykQe+n/iZDd4CrFC/Oiv2K9BU4ZnFHak30IbMLa4ks1Rw==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/ensure': 17.4.0
@@ -1533,8 +1533,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios/1.3.2:
-    resolution: {integrity: sha512-1M3O703bYqYuPhbHeya5bnhpYVsDDRyQSabNja04mZtboLNSuZ4YrltestrLXfHgmzua4TpUqRiVKbiQuo2epw==}
+  /axios/1.3.3:
+    resolution: {integrity: sha512-eYq77dYIFS77AQlhzEL937yUBSepBfPIe8FcgEDN35vMNZKMrs81pgnyrQpwfy4NF4b4XWX1Zgx7yX+25w8QJA==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
@@ -4064,8 +4064,8 @@ packages:
       enhanced-resolve: 4.5.0
     dev: true
 
-  /postcss-nesting/11.1.0:
-    resolution: {integrity: sha512-TVBCeKlUmMyX3sNeSg10yATb2XmAoosp0E1zdlpjrD+L2FrQPmrRTxlRFQh/R0Y4WlQ0butfDwRhzlYuj7y/TA==}
+  /postcss-nesting/11.2.0:
+    resolution: {integrity: sha512-VmYgRBc9CLAREKLrn4HHbV33VwUWeaNasWNzYxJX1CLLi51YDy6EtncmPtuzrsftwhPmGpWyMxMQPqgAx8u6iQ==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
