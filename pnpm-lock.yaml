@@ -15,7 +15,7 @@ specifiers:
   chart.js: ^4.2.1
   commitizen: ^4.3.0
   commitlint-config-cz: ^0.13.3
-  css-doodle: ^0.33.1
+  css-doodle: ^0.34.1
   cz-conventional-changelog: ^3.3.0
   cz-customizable: ^7.0.0
   eslint: ^8.34.0
@@ -39,7 +39,7 @@ dependencies:
   ant-design-vue: 3.2.15_vue@3.2.47
   axios: 1.3.3
   chart.js: 4.2.1
-  css-doodle: 0.33.1
+  css-doodle: 0.34.1
   pinia: 2.0.30_hmuptsblhheur2tugfgucj7gc4
   vue: 3.2.47
   vue-chartjs: 5.2.0_chart.js@4.2.1+vue@3.2.47
@@ -1935,8 +1935,8 @@ packages:
       which: 2.0.2
     dev: true
 
-  /css-doodle/0.33.1:
-    resolution: {integrity: sha512-b0f0BhPIWpuuqqQkcCKKUz3vrW7yXHGcKuX+XC2KL8YL6pkfOKBhoivaAL+eIh/L+VV0+vlPd1yVXWjxf+5sXg==}
+  /css-doodle/0.34.1:
+    resolution: {integrity: sha512-FPbA9oe21Fo+WjSLaznkZfaSHs8LtgUNdPYU+BViFCs2nnMRskgYeScCmy33q+h82gzPM6SWnRBehulAafFr6A==}
     dev: false
 
   /cssesc/3.0.0:
