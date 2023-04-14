@@ -21,8 +21,8 @@
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^17.6.0",
+    "@commitlint/config-conventional": "^17.6.0",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.15.11",
     "@vitejs/plugin-vue": "^4.1.0",
