@@ -36,6 +36,9 @@ devDependencies:
   '@rushstack/eslint-patch':
     specifier: ^1.2.0
     version: 1.2.0
+  '@tsconfig/node18':
+    specifier: ^2.0.0
+    version: 2.0.0
   '@types/node':
     specifier: ^20.1.0
     version: 20.1.0
@@ -997,6 +1000,10 @@ packages:
 
   /@tsconfig/node16@1.0.3:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+    dev: true
+
+  /@tsconfig/node18@2.0.0:
+    resolution: {integrity: sha512-uI/B0ShkiEwTk036pncXucVlj4y11EW6mycQvCEzC1PkR2TBvdQZ5Wf96dp+XXWAc70FEDfvwTqanoaDpP6rPw==}
     dev: true
 
   /@types/estree@1.0.0:
